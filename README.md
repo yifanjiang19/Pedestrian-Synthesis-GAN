@@ -15,10 +15,10 @@ python train.py --dataroot data_path --name model_name --model pix2pix --which_m
 ```bash
 python test.py --dataroot data_path --name model_name --model pix2pix --which_model_netG unet_256 --which_direction BtoA  --dataset_mode aligned --use_spp --no_lsgan --norm batch
 ```
-
-</br>
+## Vision
 Run `python -m visdom.server` to see the training process.
 </br>
+
 <img src="imgs/compare_3line.png"></img>
 <img src="imgs/compare_cityscapes_1.png"></img>
 <img src="imgs/compare_Tsinghua_1.png"></img>
