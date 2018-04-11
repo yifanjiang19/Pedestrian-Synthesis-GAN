@@ -1,6 +1,6 @@
 <img src="imgs/D.png"></img>
 </br></br></br>
-# Pedestrain-Synthesis-GAN
+# Pedestrian-Synthesis-GAN
 
 <a href="https://arxiv.org/abs/1804.02047">Pedestrian-Synthesis-GAN: Generating Pedestrian Data in Real Scene and Beyond</a>
 
