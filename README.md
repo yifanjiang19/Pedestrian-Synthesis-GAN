@@ -17,7 +17,7 @@ python test.py --dataroot data_path --name model_name --model pix2pix --which_mo
 ```
 
 </br>
-Use 'python -m visdom.server' to see the training process.
+Run `python -m visdom.server` to see the training process.
 </br>
 <img src="imgs/compare_3line.png"></img>
 <img src="imgs/compare_cityscapes_1.png"></img>
