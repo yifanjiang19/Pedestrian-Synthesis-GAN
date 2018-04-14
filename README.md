@@ -25,5 +25,5 @@ Run `python -m visdom.server` to see the training process.
 <img src="imgs/compare_Tsinghua_1.png"></img>
 
 ## Acknowledgments
-Thanks for the code <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">pix2pix provided by <a href="https://github.com/junyanz">junyanz.
+Thanks for the code <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">pix2pix</a> provided by <a href="https://github.com/junyanz">junyanz.</a>
 
