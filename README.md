@@ -1,8 +1,9 @@
+# Pedestrian-Synthesis-GAN
+See arxiv: https://arxiv.org/abs/1804.02047
+</br>
+Pedestrian-Synthesis-GAN: Generating Pedestrian Data in Real Scene and Beyond
 <img src="imgs/D.png"></img>
 </br></br></br>
-# Pedestrian-Synthesis-GAN
-
-<a href="https://arxiv.org/abs/1804.02047">Pedestrian-Synthesis-GAN: Generating Pedestrian Data in Real Scene and Beyond</a>
 
 ## Preparing
 Prepare your data before training. The format of your data should follow the file in `datasets`.
@@ -22,4 +23,7 @@ Run `python -m visdom.server` to see the training process.
 <img src="imgs/compare_3line.png"></img>
 <img src="imgs/compare_cityscapes_1.png"></img>
 <img src="imgs/compare_Tsinghua_1.png"></img>
+
+## Acknowledgments
+Thanks for the code <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">pix2pix provided by <a href="https://github.com/junyanz">junyanz.
 
