@@ -24,6 +24,17 @@ Run `python -m visdom.server` to see the training process.
 <img src="imgs/compare_cityscapes_1.png"></img>
 <img src="imgs/compare_Tsinghua_1.png"></img>
 
+## Citation
+If you find this work useful for your research, please cite:
+```bash
+@article{ouyang2018pedestrian,
+  title={Pedestrian-Synthesis-GAN: Generating Pedestrian Data in Real Scene and Beyond},
+  author={Ouyang, Xi and Cheng, Yu and Jiang, Yifan and Li, Chun-Liang and Zhou, Pan},
+  journal={arXiv preprint arXiv:1804.02047},
+  year={2018}
+}
+```
+
 ## Acknowledgments
 Thanks for the code <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">pix2pix</a> provided by <a href="https://github.com/junyanz">junyanz.</a>
 
