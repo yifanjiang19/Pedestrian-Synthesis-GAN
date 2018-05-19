@@ -14,7 +14,7 @@ python train.py --dataroot data_path --name model_name --model pix2pix --which_m
 
 ## Testing stage
 ```bash
-python test.py --dataroot data_path --name model_name --model pix2pix --which_model_netG unet_256 --which_direction BtoA  --dataset_mode aligned --use_spp --no_lsgan --norm batch
+python test.py --dataroot data_path --name model_name --model pix2pix --which_model_netG unet_256 --which_direction BtoA  --dataset_mode aligned --use_spp --norm batch
 ```
 ## Vision
 Run `python -m visdom.server` to see the training process.
@@ -36,5 +36,5 @@ If you find this work useful for your research, please cite:
 ```
 
 ## Acknowledgments
-Thanks for the code <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">pix2pix</a> provided by <a href="https://github.com/junyanz">junyanz.</a>
+Heavily borrow the code from <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">pix2pix</a>
 
