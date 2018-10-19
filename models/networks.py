@@ -48,7 +48,7 @@ def define_G(input_nc, output_nc, ngf, which_model_netG, norm='batch', use_dropo
     else:
         raise NotImplementedError('Generator model name [%s] is not recognized' % which_model_netG)
     if len(gpu_ids) > 0:
-        netG.cuda(device_id=gpu_ids[0])
+        netG.cuda(device=gpu_ids[0])
     netG.apply(weights_init)
     return netG
 
@@ -69,7 +69,7 @@ def define_image_D(input_nc, ndf, which_model_netD,
         raise NotImplementedError('Discriminator model name [%s] is not recognized' %
                                   which_model_netD)
     if use_gpu:
-        netD.cuda(device_id=gpu_ids[0])
+        netD.cuda(device=gpu_ids[0])
     netD.apply(weights_init)
     return netD
 
@@ -82,12 +82,13 @@ def define_person_D(input_nc, ndf, opt, use_sigmoid=False, gpu_ids=[]):
     if use_gpu:
         assert(torch.cuda.is_available())
     if (opt.use_spp == False):
-        netD = PersonDiscriminator(input_nc, ndf, use_sigmoid, gpu_ids=gpu_ids)
+        netD = PersonDiscriminator(input_nc, ndf, gpu_ids=gpu_ids)
     else:
         netD = SPP_NET( opt, input_nc, ndf, use_sigmoid, gpu_ids=gpu_ids)
 
     if use_gpu:
-        netD.cuda(device_id=gpu_ids[0])
+        netD.cuda(
+            _id=gpu_ids[0])
     netD.apply(weights_init)
     return netD
 
