@@ -16,7 +16,7 @@ visualizer = Visualizer(opt)
 CRITIC_ITERS = 5
 total_steps = 0
 iter_d = 0
-only_d = True
+only_d = False
 
 for epoch in range(1, opt.niter + opt.niter_decay + 1):
     epoch_start_time = time.time()
@@ -28,10 +28,10 @@ for epoch in range(1, opt.niter + opt.niter_decay + 1):
         # if w[0]-x[0] < 39:
         #     continue
         model.set_input(data)
-        if iter_d <= CRITIC_ITERS-1:
-            only_d = False
-        else:
-            only_d = False
+#         if iter_d <= CRITIC_ITERS-1:
+#             only_d = False
+#         else:
+#             only_d = False
         model.optimize_parameters(only_d)
 
         if total_steps % opt.display_freq == 0:
